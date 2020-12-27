@@ -24,7 +24,7 @@
 .footer,
 .header,
 .middle {
-    margin: 0 10px;
+    margin: 0 5px;
     text-align: center;
     background-color: #f4f4f4;
     table-layout: fixed;
@@ -210,6 +210,24 @@ p {
     }
 }
 
+@media screen and (max-width:720px){
+   .table-block{
+      display: block;
+   }
+
+   .table-block tr{
+         display: block;
+   }
+
+   .table-block tr:first-child{
+      display: none;
+   }
+
+   .table-block td{
+         display: block;
+   }
+}
+
 @media screen and (min-width:401px) and (max-width:635px) {
     .two-columns .column {
         max-width: 50%!important
@@ -220,324 +238,875 @@ p {
     .four-columns .column {
         max-width: 100%!important
     }
+
+    /* .two-columns.two-columns-dMax .column {
+        max-width: 100%!important
+    } */
 }</style>
    </head>
-   <body style="background-color:#f4f4f4;margin:0">
-      <div class="header" style="-ms-text-size-adjust:100%;-webkit-font-smoothing:subpixel-antialiased;-webkit-text-size-adjust:100%;background-color:#f4f4f4;margin:0 10px;table-layout:fixed;text-align:center">
-         <!--[if (gte mso 9)|(IE)]>
-         <table width="600" align="center">
-         <tr>
-            <td>
-               <![endif]-->
-               <table class="outer" cellpadding="0" align="center" style="border-collapse:collapse;margin:0 auto;max-width:600px;width:100%">
-                  <tbody>
-                     <tr>
-                        <td class="one-column preheader" style="-webkit-font-smoothing:subpixel-antialiased;font-size:0;text-align:center">
-                           <div class="column" style="-webkit-font-smoothing:subpixel-antialiased;display:inline-block;font-size:14px;max-width:600px;text-align:left;vertical-align:top;width:100%">
-                              <table width="100%" cellpadding="10" style="border-collapse:collapse">
-                                 <tbody>
-                                    <tr>
-                                       <td style="-webkit-font-smoothing:subpixel-antialiased">
-                                          <div class="paragraph" style="-webkit-font-smoothing:subpixel-antialiased;color:#666;font-family:helvetica,arial;font-size:11px;line-height:20px;text-align:center">Fork me on <a href="https://github.com/dudeonthehorse/kilogram" target="_blank" style="color:#07c!important;text-decoration:underline"><span style="color:#07c">Github</span></a>. Or use this place for email preheader.</div>
-                                       </td>
-                                    </tr>
-                                 </tbody>
-                              </table>
-                           </div>
-                        </td>
-                     </tr>
-                     <tr>
-                        <td class="one-column logo" style="-webkit-font-smoothing:subpixel-antialiased;font-size:0;text-align:center">
-                           <div class="column" style="-webkit-font-smoothing:subpixel-antialiased;display:inline-block;font-size:14px;max-width:600px;text-align:left;vertical-align:top;width:100%">
-                              <table width="100%" cellpadding="0" style="border-collapse:collapse">
-                                 <tbody>
-                                    <tr>
-                                       <td style="-webkit-font-smoothing:subpixel-antialiased;padding:0 10px;text-align:center"><a href="https://github.com/dudeonthehorse/kilogram" target="_blank" style="color:#07c!important;text-decoration:underline"><img src="./index_files/Octocat.png" width="72" height="60" style="border:0"></a></td>
-                                    </tr>
-                                 </tbody>
-                              </table>
-                           </div>
-                        </td>
-                     </tr>
-                     <tr>
-                        <td class="one-column heading" style="-webkit-font-smoothing:subpixel-antialiased;font-size:0;text-align:center">
-                           <div class="column" style="-webkit-font-smoothing:subpixel-antialiased;display:inline-block;font-size:14px;max-width:600px;text-align:left;vertical-align:top;width:100%">
-                              <table width="100%" cellpadding="10" style="border-collapse:collapse">
-                                 <tbody>
-                                    <tr>
-                                       <td style="-webkit-font-smoothing:subpixel-antialiased">
-                                          <div class="h1" style="-webkit-font-smoothing:subpixel-antialiased;color:#333;font-family:helvetica,arial;font-size:24px;line-height:30px;text-align:center">Email Development Framework</div>
-                                          <div class="paragraph" style="-webkit-font-smoothing:subpixel-antialiased;color:#666;font-family:helvetica,arial;font-size:11px;line-height:20px;text-align:center">by Arthur Koch @dudeonthehorse</div>
-                                       </td>
-                                    </tr>
-                                 </tbody>
-                              </table>
-                           </div>
-                        </td>
-                     </tr>
-                  </tbody>
-               </table>
-               <!--[if (gte mso 9)|(IE)]><![endif]-->
-      </div>
-      <div class="middle" style="-ms-text-size-adjust:100%;-webkit-font-smoothing:subpixel-antialiased;-webkit-text-size-adjust:100%;background-color:#f4f4f4;margin:0 10px;table-layout:fixed;text-align:center">
+   <body style="background: #F5F6F9;margin:0">
+      
+      <div class="middle" style="-ms-text-size-adjust:100%;-webkit-font-smoothing:subpixel-antialiased;-webkit-text-size-adjust:100%;background: #F5F6F9; margin:0 5px;table-layout:fixed;text-align:center; padding-top:50px;">
    <!--[if (gte mso 9)|(IE)]>
    <table width="600" align="center">
    <tr>
       <td>
          <![endif]-->
-         <table class="outer" cellpadding="0" align="center" style="background-color:#fff;border-collapse:collapse;border-radius:4px;margin:0 auto;max-width:600px;width:100%">
+         <table class="outer" cellpadding="0" align="center" style="border-collapse:collapse;background: #FFFFFF;border-radius: 10px;margin:0 auto;max-width:600px;width:100%">
    <tbody>
       <tr>
-         <td class="cover" style="-webkit-font-smoothing:subpixel-antialiased;padding:0"><a href="https://github.com/dudeonthehorse/kilogram" target="_blank" style="color:#07c!important;text-decoration:underline"><img src="./index_files/cover.jpg" width="600" style="border:0;border-radius:4px 4px 0 0;display:block;height:auto;max-width:600px;width:100%"></a></td>
-      </tr>
-      <tr>
-         <td class="one-column content" style="-webkit-font-smoothing:subpixel-antialiased;font-size:0;padding:0;text-align:center">
-            <div class="column" style="-webkit-font-smoothing:subpixel-antialiased;display:inline-block;font-size:14px;max-width:600px;text-align:left;vertical-align:top;width:100%">
-               <table width="100%" cellpadding="20" style="border-collapse:collapse">
-                  <tbody>
-                     <tr>
-                        <td style="-webkit-font-smoothing:subpixel-antialiased;padding-bottom:10px">
-                           <div class="h1" style="-webkit-font-smoothing:subpixel-antialiased;color:#333;font-family:helvetica,arial;font-size:24px;line-height:30px;text-align:left">CSS Inliner</div>
-                           <p style="-webkit-font-smoothing:subpixel-antialiased;Margin:1em 0;color:#333;font-family:helvetica,arial;font-size:14px;line-height:20px;text-align:left">Используйте <a href="http://inliner.cm/" target="_blank" style="color:#07c!important;text-decoration:underline"><span style="color:#07c">инлайнер</span> </a>перед использованием верстки на продакшене или непосредственно перед отправкой письма через систему рассылки.</p>
-                           <p class="quote" style="-webkit-font-smoothing:subpixel-antialiased;Margin:1em 0;color:#999;font-family:helvetica,arial;font-size:14px;font-style:italic;line-height:20px;text-align:left">«Writing inline CSS can be a pain, so we built a tool that'll do the hard work for you. Just paste your HTML below, and we'll move all your styles inline.»</p>
-                           <div style="-webkit-font-smoothing:subpixel-antialiased;text-align:center">
-                              <table class="button" style="border-collapse:collapse;margin:auto;width:auto!important">
-                                 <tbody>
-                                    <tr>
-                                       <td class="button-inner" style="-webkit-font-smoothing:subpixel-antialiased;padding:0"><a class="button-link" href="http://inliner.cm/" target="_blank" style="background-color:#333;border:#333 10px solid;border-radius:25px;color:#fff!important;display:inline-block;font-family:helvetica;font-size:14px;font-weight:700;padding:0 10px;text-decoration:none"><span style="color:#fff">Try Inliner</span></a></td>
-                                    </tr>
-                                 </tbody>
-                              </table>
-                           </div>
-                           <div class="h1" style="-webkit-font-smoothing:subpixel-antialiased;color:#333;font-family:helvetica,arial;font-size:24px;line-height:30px;text-align:left"><br>Email Clients &amp; Web Interfaces Support</div>
-                           <p style="-webkit-font-smoothing:subpixel-antialiased;Margin:1em 0;color:#333;font-family:helvetica,arial;font-size:14px;line-height:20px;text-align:left">–&nbsp; Gmail (web, iOS, android)</p>
-                           <p style="-webkit-font-smoothing:subpixel-antialiased;Margin:1em 0;color:#333;font-family:helvetica,arial;font-size:14px;line-height:20px;text-align:left">–&nbsp; Mail.ru (web, iOS)</p>
-                           <p style="-webkit-font-smoothing:subpixel-antialiased;Margin:1em 0;color:#333;font-family:helvetica,arial;font-size:14px;line-height:20px;text-align:left">–&nbsp; Rambler.ru (web)</p>
-                           <p style="-webkit-font-smoothing:subpixel-antialiased;Margin:1em 0;color:#333;font-family:helvetica,arial;font-size:14px;line-height:20px;text-align:left">–&nbsp; Yandex (web, iOS, android)</p>
-                           <p style="-webkit-font-smoothing:subpixel-antialiased;Margin:1em 0;color:#333;font-family:helvetica,arial;font-size:14px;line-height:20px;text-align:left">–&nbsp; <a href="https://github.com/dudeonthehorse/kilogram" style="color:#07c!important;text-decoration:underline"><span style="color:#07c">And other</span></a></p>
-                           <br>
-                           <div class="h1" style="-webkit-font-smoothing:subpixel-antialiased;color:#333;font-family:helvetica,arial;font-size:24px;line-height:30px;text-align:left">Multicolumns Examples. Content by <a href="http://dribbble.com/" style="color:#07c!important;text-decoration:underline"><span style="color:#07c">Dribbble.com</span></a></div>
-                        </td>
-                     </tr>
-                  </tbody>
-               </table>
-            </div>
-         </td>
-      </tr>
-      <tr>
-         <td class="two-columns" style="-webkit-font-smoothing:subpixel-antialiased;font-size:0;padding-left:10px;padding-right:10px;text-align:center">
-            <!--[if (gte mso 9)|(IE)]>
-            <table width="100%">
-      <tr>
-         <td width="50%" valign="top">
-            <![endif]-->
-            <div class="column" style="-webkit-font-smoothing:subpixel-antialiased;display:inline-block;font-size:14px;max-width:290px;text-align:left;vertical-align:top;width:100%">
-               <table width="100%" cellpadding="10" style="border-collapse:collapse">
-                  <tbody>
-                     <tr>
-                        <td style="-webkit-font-smoothing:subpixel-antialiased"><img width="270" src="https://d13yacurqjgara.cloudfront.net/users/14604/screenshots/1764344/helpcreature_1x.png" style="width:100%"></td>
-                     </tr>
-                     <tr>
-                        <td style="-webkit-font-smoothing:subpixel-antialiased;padding-top:0">
-                           <div class="h2" style="-webkit-font-smoothing:subpixel-antialiased;color:#333;font-family:helvetica,arial;font-size:18px;line-height:24px;text-align:left"><a href="http://dudeonthehorse.github.io/kilogram/kilogram_alpha/build/index.html#" target="_blank" style="color:#07c!important;text-decoration:underline"><span style="color:#07c">HelpCreature Welcome Email</span></a></div>
-                           <div class="paragraph" style="-webkit-font-smoothing:subpixel-antialiased;color:#333;font-family:helvetica,arial;font-size:14px;line-height:20px;text-align:left">by Allan Grinshtein Oct 13, 2014</div>
-                           <div class="paragraph quote" style="-webkit-font-smoothing:subpixel-antialiased;color:#999;font-family:helvetica,arial;font-size:14px;font-style:italic;line-height:20px;text-align:left">Learning Rails and building a tiny project called HelpCreature in the process. Here's a shot of the welcome email.</div>
-                        </td>
-                     </tr>
-                  </tbody>
-               </table>
-            </div>
-            <!--[if (gte mso 9)|(IE)]>
-         <td width="50%" valign="top">
-            <![endif]-->
-            <div class="column" style="-webkit-font-smoothing:subpixel-antialiased;display:inline-block;font-size:14px;max-width:290px;text-align:left;vertical-align:top;width:100%">
-               <table width="100%" cellpadding="10" style="border-collapse:collapse">
-                  <tbody>
-                     <tr>
-                        <td style="-webkit-font-smoothing:subpixel-antialiased"><img width="270" src="https://d13yacurqjgara.cloudfront.net/users/3139/screenshots/1015141/email_id.jpg" style="width:100%"></td>
-                     </tr>
-                     <tr>
-                        <td style="-webkit-font-smoothing:subpixel-antialiased;padding-top:0">
-                           <div class="h2" style="-webkit-font-smoothing:subpixel-antialiased;color:#333;font-family:helvetica,arial;font-size:18px;line-height:24px;text-align:left"><a href="http://dudeonthehorse.github.io/kilogram/kilogram_alpha/build/index.html#" target="_blank" style="color:#07c!important;text-decoration:underline">Emailing</a></div>
-                           <div class="paragraph" style="-webkit-font-smoothing:subpixel-antialiased;color:#333;font-family:helvetica,arial;font-size:14px;line-height:20px;text-align:left">by Mackey Saturday Apr 4, 2013</div>
-                           <div class="paragraph quote" style="-webkit-font-smoothing:subpixel-antialiased;color:#999;font-family:helvetica,arial;font-size:14px;font-style:italic;line-height:20px;text-align:left">email, chat, app, all in one.</div>
-                        </td>
-                     </tr>
-                  </tbody>
-               </table>
-            </div>
-            <!--[if (gte mso 9)|(IE)]><![endif]-->
-         </td>
-      </tr>
-      <tr>
-         <td class="three-columns" style="-webkit-font-smoothing:subpixel-antialiased;font-size:0;padding-left:10px;padding-right:10px;text-align:center">
-            <!--[if (gte mso 9)|(IE)]>
-            <table width="100%">
-      <tr>
-         <td width="33%" valign="top">
-            <![endif]-->
-            <div class="column" style="-webkit-font-smoothing:subpixel-antialiased;display:inline-block;font-size:14px;max-width:193px;text-align:left;vertical-align:top;width:100%">
-               <table width="100%" cellpadding="10" style="border-collapse:collapse">
-                  <tbody>
-                     <tr>
-                        <td style="-webkit-font-smoothing:subpixel-antialiased">
-                           <table width="100%" cellpadding="10" bgcolor="#f4f4f4" style="border-collapse:collapse;border-radius:4px">
-                              <tbody>
-                                 <tr>
-                                    <td class="paragraph" style="-webkit-font-smoothing:subpixel-antialiased;color:#333;font-family:helvetica,arial;font-size:14px;line-height:20px;text-align:left">3 columns</td>
-                                 </tr>
-                              </tbody>
-                           </table>
-                        </td>
-                     </tr>
-                  </tbody>
-               </table>
-            </div>
-            <!--[if (gte mso 9)|(IE)]>
-         <td width="33%" valign="top">
-            <![endif]-->
-            <div class="column" style="-webkit-font-smoothing:subpixel-antialiased;display:inline-block;font-size:14px;max-width:193px;text-align:left;vertical-align:top;width:100%">
-               <table width="100%" cellpadding="10" style="border-collapse:collapse">
-                  <tbody>
-                     <tr>
-                        <td style="-webkit-font-smoothing:subpixel-antialiased">
-                           <table width="100%" cellpadding="10" bgcolor="#f4f4f4" style="border-collapse:collapse;border-radius:4px">
-                              <tbody>
-                                 <tr>
-                                    <td class="paragraph" style="-webkit-font-smoothing:subpixel-antialiased;color:#333;font-family:helvetica,arial;font-size:14px;line-height:20px;text-align:left">3 columns</td>
-                                 </tr>
-                              </tbody>
-                           </table>
-                        </td>
-                     </tr>
-                  </tbody>
-               </table>
-            </div>
-            <!--[if (gte mso 9)|(IE)]>
-         <td width="33%" valign="top">
-            <![endif]-->
-            <div class="column" style="-webkit-font-smoothing:subpixel-antialiased;display:inline-block;font-size:14px;max-width:193px;text-align:left;vertical-align:top;width:100%">
-               <table width="100%" cellpadding="10" style="border-collapse:collapse">
-                  <tbody>
-                     <tr>
-                        <td style="-webkit-font-smoothing:subpixel-antialiased">
-                           <table width="100%" cellpadding="10" bgcolor="#f4f4f4" style="border-collapse:collapse;border-radius:4px">
-                              <tbody>
-                                 <tr>
-                                    <td class="paragraph" style="-webkit-font-smoothing:subpixel-antialiased;color:#333;font-family:helvetica,arial;font-size:14px;line-height:20px;text-align:left">3 columns</td>
-                                 </tr>
-                              </tbody>
-                           </table>
-                        </td>
-                     </tr>
-                  </tbody>
-               </table>
-            </div>
-            <!--[if (gte mso 9)|(IE)]><![endif]-->
-         </td>
-      </tr>
-      <tr>
-         <td class="four-columns" style="-webkit-font-smoothing:subpixel-antialiased;font-size:0;padding-bottom:10px;padding-left:10px;padding-right:10px;text-align:center">
-            <!--[if (gte mso 9)|(IE)]>
-            <table width="100%">
-               <tr>
-                  <td width="50%" valign="top">
-                     <![endif]-->
-                     <div class="column" style="-webkit-font-smoothing:subpixel-antialiased;display:inline-block;font-size:14px;max-width:290px;text-align:left;vertical-align:top;width:100%">
-                        <table width="100%" cellpadding="0" style="border-collapse:collapse">
-                           <tbody>
-                              <tr>
-                                 <td width="50%" style="-webkit-font-smoothing:subpixel-antialiased">
-                                    <table width="100%" cellpadding="10" style="border-collapse:collapse">
-                                       <tbody>
-                                          <tr>
-                                             <td style="-webkit-font-smoothing:subpixel-antialiased">
-                                                <table width="100%" cellpadding="10" bgcolor="#f4f4f4" style="border-collapse:collapse;border-radius:4px">
-                                                   <tbody>
-                                                      <tr>
-                                                         <td class="paragraph" style="-webkit-font-smoothing:subpixel-antialiased;color:#333;font-family:helvetica,arial;font-size:14px;line-height:20px;text-align:left">2+2 columns</td>
-                                                      </tr>
-                                                   </tbody>
-                                                </table>
-                                             </td>
-                                          </tr>
-                                       </tbody>
-                                    </table>
-                                 </td>
-                                 <td width="50%" style="-webkit-font-smoothing:subpixel-antialiased">
-                                    <table width="100%" cellpadding="10" style="border-collapse:collapse">
-                                       <tbody>
-                                          <tr>
-                                             <td style="-webkit-font-smoothing:subpixel-antialiased">
-                                                <table width="100%" cellpadding="10" bgcolor="#f4f4f4" style="border-collapse:collapse;border-radius:4px">
-                                                   <tbody>
-                                                      <tr>
-                                                         <td class="paragraph" style="-webkit-font-smoothing:subpixel-antialiased;color:#333;font-family:helvetica,arial;font-size:14px;line-height:20px;text-align:left">2+2 columns</td>
-                                                      </tr>
-                                                   </tbody>
-                                                </table>
-                                             </td>
-                                          </tr>
-                                       </tbody>
-                                    </table>
-                                 </td>
-                              </tr>
-                           </tbody>
-                        </table>
-                     </div>
-                     <!--[if (gte mso 9)|(IE)]>
-                  <td width="50%" valign="top">
-                     <![endif]-->
-                     <div class="column" style="-webkit-font-smoothing:subpixel-antialiased;display:inline-block;font-size:14px;max-width:290px;text-align:left;vertical-align:top;width:100%">
-                        <table width="100%" cellpadding="0" style="border-collapse:collapse">
-                           <tbody>
-                              <tr>
-                                 <td width="50%" style="-webkit-font-smoothing:subpixel-antialiased">
-                                    <table width="100%" cellpadding="10" style="border-collapse:collapse">
-                                       <tbody>
-                                          <tr>
-                                             <td style="-webkit-font-smoothing:subpixel-antialiased">
-                                                <table width="100%" cellpadding="10" bgcolor="#f4f4f4" style="border-collapse:collapse;border-radius:4px">
-                                                   <tbody>
-                                                      <tr>
-                                                         <td class="paragraph" style="-webkit-font-smoothing:subpixel-antialiased;color:#333;font-family:helvetica,arial;font-size:14px;line-height:20px;text-align:left">2+2 columns</td>
-                                                      </tr>
-                                                   </tbody>
-                                                </table>
-                                             </td>
-                                          </tr>
-                                       </tbody>
-                                    </table>
-                                 </td>
-                                 <td width="50%" style="-webkit-font-smoothing:subpixel-antialiased">
-                                    <table width="100%" cellpadding="10" style="border-collapse:collapse">
-                                       <tbody>
-                                          <tr>
-                                             <td style="-webkit-font-smoothing:subpixel-antialiased">
-                                                <table width="100%" cellpadding="10" bgcolor="#f4f4f4" style="border-collapse:collapse;border-radius:4px">
-                                                   <tbody>
-                                                      <tr>
-                                                         <td class="paragraph" style="-webkit-font-smoothing:subpixel-antialiased;color:#333;font-family:helvetica,arial;font-size:14px;line-height:20px;text-align:left">2+2 columns</td>
-                                                      </tr>
-                                                   </tbody>
-                                                </table>
-                                             </td>
-                                          </tr>
-                                       </tbody>
-                                    </table>
-                                 </td>
-                              </tr>
-                           </tbody>
-                        </table>
-                     </div>
-                     <!--[if (gte mso 9)|(IE)]><![endif]-->
+         <td class="one-column content"   style="-webkit-font-smoothing:subpixel-antialiased;padding-top:40px;box-sizing: border-box; width: 100%;">
+            <table width="100%" cellpadding="10" style="border-collapse:collapse">
+               <tbody>
+                  <tr>
+                     <td style="-webkit-font-smoothing:subpixel-antialiased;padding-top: 0; padding-bottom: 0;">
+                       
+                        <div style="-webkit-font-smoothing:subpixel-antialiased;padding-bottom:35px;border-bottom: 1px solid #E4E4E4;">
+                           <a href="#" target="_blank" style="font-family: Arial;
+                     font-style: normal;
+                     font-weight: normal;
+                     font-size: 12px;
+                     line-height: 125%;
+                     display: flex;
+                     align-items: center;
+                     letter-spacing: 0.03em;
+                     text-decoration: none;-webkit-font-smoothing:subpixel-antialiased;
+                     color: #757982;">
+                        <img src="data:image/png;base64,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" width="111" style="border:0;border-radius:0;display:block;height:auto;max-width:111px;width:111px;">
+                        <span style="font-family: Arial;
+                        display: block;
+                        font-style: normal;
+                        font-weight: normal;
+                        font-size: 12px;
+                        line-height: 125%;
+                        letter-spacing: 0.03em;
+                        text-decoration: none;
+                        max-width: 154px;
+                        margin-left: 12px;
+                        text-align:left;-webkit-font-smoothing:subpixel-antialiased;
+                        color: #757982;">Лучший поисковик автозапчастей</span>
+                     </a>
+                        </div>
                   </td>
-               </tr>
+                  </tr>
+               </tbody>
+            </table>
+            
+         </td>
+      </tr>
+      <tr>
+         <td class="one-column content" style="-webkit-font-smoothing:subpixel-antialiased;font-size:0;padding:0;text-align:center;box-sizing:border-box; width: 100%;">
+            <div class="column" style="-webkit-font-smoothing:subpixel-antialiased;display:inline-block;font-size:14px;max-width:600px;text-align:left;vertical-align:top;width:100%">
+               <table width="100%" cellpadding="10" style="border-collapse:collapse">
+                  <tbody>
+                     <tr>
+                        <td style="-webkit-font-smoothing:subpixel-antialiased; padding-bottom:32px; padding-top:32px;">
+                           <div class="h1" 
+                           style="-webkit-font-smoothing:subpixel-antialiased;
+                           font-family: Arial;
+                           font-style: normal;
+                           font-weight: bold;
+                           font-size: 18px;
+                           line-height: 135%;
+                           color: #000000;">
+                           Получен новый заказ №9284547</div>
+                        </td>
+                     </tr>
+                  </tbody>
+               </table>
+            </div>
+         </td>
+      </tr>
+      <tr>
+         <td class="one-column content" style="-webkit-font-smoothing:subpixel-antialiased;font-size:0;text-align:center; box-sizing: border-box; width: 100%;">
+            <div class="column" style="-webkit-font-smoothing:subpixel-antialiased;display:inline-block;font-size:14px;max-width:600px;text-align:left;box-sizing: border-box; vertical-align:top;width:100%; ">
+               
+               <table width="100%" cellpadding="10"  style="border-collapse:collapse">
+                  <tbody>
+                     <tr>
+                        <td style="-webkit-font-smoothing:subpixel-antialiased;">
+                           <div style="border: 1px solid #DADCE0;
+                                    border-radius: 6px;">
+<table width="100%" cellpadding="10"  style="border-collapse:collapse; ">
+   <tbody>
+      <tr>
+         <td class="two-columns two-columns-dMax" style="-webkit-font-smoothing:subpixel-antialiased;font-size:0;text-align:left;">
+         
+<!--[if (gte mso 9)|(IE)]>
+<table width="100%">
+<tr>
+<td width="50%" valign="top">
+<![endif]-->
+<div class="column" style="-webkit-font-smoothing:subpixel-antialiased;display:inline-block;font-size:14px;max-width:calc(100% - 148px);text-align:left;vertical-align:top;width:100%">
+<table width="100%"  style="border-collapse:collapse">
+   <tbody>
+      <tr>
+         <td style="-webkit-font-smoothing:subpixel-antialiased; ">
+            <div class="h2" style="-webkit-font-smoothing:subpixel-antialiased;
+            text-align:left;
+            font-family: Arial;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 14px;
+            line-height: 16px;
+            letter-spacing: -0.24px;
+            padding-bottom: 6px;
+            color: #000000;">
+               Контактное лицо: 
+               <span style="font-family: Arial;
+                  font-style: normal;
+                  font-weight: normal;
+                  font-size: 14px;
+                  line-height: 16px;
+                  letter-spacing: -0.24px;
+                  color: #000000;">Владимир Мелихов</span>
+            </div>
+            <div class="h2" style="-webkit-font-smoothing:subpixel-antialiased;
+            text-align:left;
+            font-family: Arial;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 14px;
+            line-height: 16px;
+            letter-spacing: -0.24px;
+            padding-bottom: 6px;
+            color: #000000;">
+               Мобильный телефон: 
+               <a href="tel:+79267010744" target="_blank" style="font-family: Arial;
+               font-style: normal;
+               font-weight: normal;
+               font-size: 14px;
+               line-height: 16px;
+               letter-spacing: -0.24px;
+               text-decoration: underline;
+               color: #2E90FE;">
+                  <span style="font-family: Arial;
+                  font-style: normal;
+                  font-weight: normal;
+                  font-size: 14px;
+                  line-height: 16px;
+                  letter-spacing: -0.24px;
+                  text-decoration: underline;
+                  color: #2E90FE;">+7 (926) 701-07-44</span>
+               </a>
+            </div>
+            <div class="h2" style="-webkit-font-smoothing:subpixel-antialiased;
+            text-align:left;
+            font-family: Arial;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 14px;
+            line-height: 16px;
+            letter-spacing: -0.24px;
+            padding-bottom: 12px;
+            color: #000000;">
+               Email: 
+               <a href="mailto:svene532@gmail.com" target="_blank" style="font-family: Arial;
+               font-style: normal;
+               font-weight: normal;
+               font-size: 14px;
+               line-height: 16px;
+               letter-spacing: -0.24px;
+               text-decoration: underline;
+               color: #2E90FE;">
+                  <span style="font-family: Arial;
+                  font-style: normal;
+                  font-weight: normal;
+                  font-size: 14px;
+                  line-height: 16px;
+                  letter-spacing: -0.24px;
+                  text-decoration: underline;
+                  color: #2E90FE;"> svene532@gmail.com</span>
+               </a>
+            </div>
+            <div class="h2" style="-webkit-font-smoothing:subpixel-antialiased;
+            text-align:left;
+            font-family: Arial;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 14px;
+            line-height: 16px;
+            letter-spacing: -0.24px;
+            padding-bottom: 6px;
+            color: #000000;">
+               Комментарий к заказу: 
+               <span style="font-family: Arial;
+                  font-style: normal;
+                  font-weight: normal;
+                  font-size: 14px;
+                  line-height: 16px;
+                  letter-spacing: -0.24px;
+                  color: #000000;">Подойдёт для а/м P&shy;0&shy;Z&shy;Z&shy;Z&shy;9&shy;7&shy;Z&shy;E&shy;L&shy;0&shy;5&shy;0&shy;7&shy;3&shy;6&shy;W&shy;P&shy;0&shy;Z&shy;Z&shy;Z&shy;9&shy;7&shy;Z&shy;E&shy;L&shy;0&shy;5&shy;0&shy;7&shy;3&shy;6 ?</span>
+            </div>
+         </td>
+      </tr>
+   </tbody>
+</table>
+</div>
+<!--[if (gte mso 9)|(IE)]>
+<td width="50%" valign="top">
+<![endif]-->
+<div class="column" style="-webkit-font-smoothing:subpixel-antialiased;display:inline-block;font-size:14px;max-width:148px;text-align:left;vertical-align:top;width:100%; padding:32px 0">
+<table width="100%" cellpadding="0" style="border-collapse:collapse">
+   <tbody>
+      <tr>
+         <td style="-webkit-font-smoothing:subpixel-antialiased;">
+            <a href="#" target="_blank" style="
+               display: block;
+               font-family: Arial;
+               background: #FEED00;
+               border-radius: 6px;
+               text-decoration: none;
+               font-family: Arial;
+               font-style: normal;
+               font-weight: bold;
+               font-size: 14px;
+               line-height: 35px;
+               padding: 7px;
+               text-align: center;
+               box-sizing: border-box;
+               width: 100%;
+               color: #000000;">
+                  <span style="
+                  font-family: Arial;
+                  font-style: normal;
+                  font-weight: bold;
+                  font-size: 14px;
+                  line-height: 34px;
+                  text-decoration: none;
+                  color: #000000;">Открыть заказ</span>
+               </a>
+         </td>
+      </tr>
+   </tbody>
+</table>
+</div>
+<!--[if (gte mso 9)|(IE)]><![endif]-->
+</td>
+      </tr>
+   </tbody>
+</table>
+                           </div>
+                           
+                        </td>
+                     </tr>
+                  </tbody>
+               </table>
+               
+               
+            </div>
+         </td>
+      </tr>
+      <tr>
+         <td class="one-column content" style="-webkit-font-smoothing:subpixel-antialiased;font-size:0;padding:0;text-align:center;box-sizing:border-box; width: 100%;">
+            <div class="column" style="-webkit-font-smoothing:subpixel-antialiased;display:inline-block;font-size:14px;max-width:600px;text-align:left;vertical-align:top;width:100%">
+               <table width="100%" cellpadding="10" style="border-collapse:collapse">
+                  <tbody>
+                     <tr>
+                        <td style="-webkit-font-smoothing:subpixel-antialiased;padding-top: 0;padding-bottom: 0;">
+                           
+                           <div style="padding:17px; display: inline-block; border-radius:50%; width: 58px;box-sizing: border-box;background: rgba(46, 143, 254, 0.1); margin-right:12px;">
+                              <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAEiSURBVHgB7ZTtUcMwDIb1ph2gI5gByGUVNoAJmkyQMoHNBMAEjEIvCzQjMAC1kPJR6l5SkuJfvT53tk5nxa+syCa6cfVAp9T5nRhDl1FXeXI3tph01tDlmHOLy2NHMgHNQE7Of8UsKQKBEHNRFQvXuwnFBigzyyaqgJZWBxM085UHf4jIKppAz4LpWUwtI/OgMrrAtsDXN+Oh9TjXOf5PprCxAoHU7nMgWTOxkX7dMuCqNd7pH4QlAqxu3uWRScu9qejQh/eWH2m2gOCBjXaE2l5US3A6AH4djD+hf4sOhTu+zVNu6rn44GVIHe+a7Ox+0/hiu2w/hzaeGv9bIvYv7ZlQNpmI7Xw3JDA1/iCg7wcznqi9KEotdc3Humhu/I1RfgApE5+zNmCZxgAAAABJRU5ErkJggg==" width="24" style="border:0;border-radius:0;display:block;height:auto;max-width:24px;width:24px;">
+                           </div>
+                           <div style="display: inline-block; vertical-align: top;padding-top: 10px; ">
+                              <div class="h2" style="-webkit-font-smoothing:subpixel-antialiased;
+                              text-align:left;
+                              font-family: Arial;
+                              font-style: normal;
+                              font-weight: bold;
+                              font-size: 14px;
+                              line-height: 16px;
+                              letter-spacing: -0.24px;
+                              padding-bottom: 6px;
+                              color: #000000;">
+                                 Выбранный способ: 
+                                 <span style="font-family: Arial;
+                                    font-style: normal;
+                                    font-weight: normal;
+                                    font-size: 14px;
+                                    line-height: 16px;
+                                    letter-spacing: -0.24px;
+                                    color: #000000;">Доставка курьером</span>
+                              </div>
+                              <div class="h2" style="-webkit-font-smoothing:subpixel-antialiased;
+                              text-align:left;
+                              font-family: Arial;
+                              font-style: normal;
+                              font-weight: bold;
+                              font-size: 14px;
+                              line-height: 16px;
+                              letter-spacing: -0.24px;
+                              padding-bottom: 6px;
+                              color: #000000;">
+                                 Адрес доставки: 
+                                 <span style="font-family: Arial;
+                                    font-style: normal;
+                                    font-weight: normal;
+                                    font-size: 14px;
+                                    line-height: 16px;
+                                    letter-spacing: -0.24px;
+                                    color: #000000;">г. Санкт-Петербург, пр-т Энгельса, д. 97</span>
+                              </div>
+                           </div>
+                        </td>
+                     </tr>
+                  </tbody>
+               </table>
+            </div>
+         </td>
+      </tr>
+
+      <tr>
+         <td class="one-column content" style="-webkit-font-smoothing:subpixel-antialiased;font-size:0;padding:0;text-align:center;box-sizing:border-box; width: 100%;">
+            <div class="column" style="-webkit-font-smoothing:subpixel-antialiased;display:inline-block;font-size:14px;max-width:600px;text-align:left;vertical-align:top;width:100%">
+               <table width="100%" cellpadding="10" style="border-collapse:collapse">
+                  <tbody>
+                     <tr>
+                        <td style="-webkit-font-smoothing:subpixel-antialiased;">
+                           <table  class="table-block" width="100%" style="border-collapse:collapse; border-collapse:collapse;">
+                              <tr>
+                                 <td style="border: 1px solid #DDDDDD; padding:8px; background: #F5F5F5;"><span style="font-family: Arial;
+font-style: normal;
+font-weight: bold;
+font-size: 12px;
+line-height: 16px;
+display: block;
+letter-spacing: -0.24px;
+color: #333333;">Склад</span></td>
+                                 <td style="border: 1px solid #DDDDDD; padding:8px; background: #F5F5F5;"><span style="font-family: Arial;
+font-style: normal;
+font-weight: bold;
+font-size: 12px;
+line-height: 16px;
+display: block;
+letter-spacing: -0.24px;
+color: #333333;">Деталь</span></td>
+                                 <td style="border: 1px solid #DDDDDD; padding:8px; background: #F5F5F5;"><span style="font-family: Arial;
+font-style: normal;
+font-weight: bold;
+font-size: 12px;
+line-height: 16px;
+display: block;
+letter-spacing: -0.24px;
+color: #333333;">Срок</span></td>
+                                 <td style="border: 1px solid #DDDDDD; padding:8px; background: #F5F5F5;"><span style="font-family: Arial;
+font-style: normal;
+font-weight: bold;
+font-size: 12px;
+line-height: 16px;
+display: block;
+letter-spacing: -0.24px;
+color: #333333;">Кол-во</span></td>
+                                 <td style="border: 1px solid #DDDDDD; padding:8px; background: #F5F5F5;"><span style="font-family: Arial;
+font-style: normal;
+font-weight: bold;
+font-size: 12px;
+line-height: 16px;
+display: block;
+letter-spacing: -0.24px;
+text-align: right;
+color: #333333;">Закупка, руб.</span></td>
+                                 <td style="border: 1px solid #DDDDDD; padding:8px; background: #F5F5F5;"><span style="font-family: Arial;
+                                    font-style: normal;
+                                    font-weight: bold;
+                                    font-size: 12px;
+                                    line-height: 16px;
+                                    letter-spacing: -0.24px;
+                                    display: block;
+                                    text-align: right;
+                                    color: #333333;">Наценка, руб.</span>
+                                 </td>
+                                 <td style="border: 1px solid #DDDDDD; padding:8px; background: #F5F5F5;"><span style="font-family: Arial;
+                                    font-style: normal;
+                                    display: block;
+                                    font-weight: bold;
+                                    font-size: 12px;
+                                    line-height: 16px;
+                                    letter-spacing: -0.24px;
+                                    text-align: right;
+                                    color: #333333;">Продажа, руб.</span>
+                                 </td>
+                                 <td style="border: 1px solid #DDDDDD; padding:8px; background: #F5F5F5;">
+                                    <span style="font-family: Arial;
+                                    display: block;
+                                       font-style: normal;
+                                       font-weight: bold;
+                                       font-size: 12px;
+                                       line-height: 16px;
+                                       letter-spacing: -0.24px;
+                                       text-align: right;
+                                       color: #333333;">Сумма, руб.</span>
+                                 </td>
+                              </tr>
+                              <tr>
+                                 <td style="background: #FFFFFF; border: 1px solid #DDDDDD; padding:8px;">
+                                    <span style="font-family: Arial;
+                                    font-style: normal;
+                                    font-weight: normal;
+                                    font-size: 12px;
+                                    line-height: 16px;
+                                    letter-spacing: -0.24px;
+                                    display: block;
+                                    color: #000000;">Форум</span>
+                                 </td>
+
+                                 <td style="background: #FFFFFF; border: 1px solid #DDDDDD; padding:8px;">
+                                    <div><span style="font-family: Arial;
+                                       font-style: normal;
+                                       font-weight: normal;
+                                       font-size: 12px;
+                                       line-height: 16px;
+                                       letter-spacing: -0.24px;
+                                       color: #757982;">Bosch</span>
+                                       <a href="#" style=" font-family: Arial; text-decoration:none;
+                                       font-style: normal;
+                                       font-weight: normal;
+                                       font-size: 12px;
+                                       line-height: 16px;
+                                       letter-spacing: -0.24px;
+                                       color: #2E90FE;"><span style="font-family: Arial; text-decoration:none;
+                                       font-style: normal;
+                                       font-weight: normal;
+                                       font-size: 12px;
+                                       line-height: 16px;
+                                       letter-spacing: -0.24px;
+                                       color: #2E90FE;">0092S5A110</span></a></div>
+                                    <span style="font-family: Arial;
+                                    font-style: normal;
+                                    font-weight: normal;
+                                    font-size: 12px;
+                                    line-height: 16px;
+                                    letter-spacing: -0.24px;
+                                    display: block;
+                                    color: #000000;">Аккумуляторная батарея S5 AGM [12V 80Ah 800A B13]</span>
+                                 </td>
+
+                                 <td style="background: #FFFFFF; border: 1px solid #DDDDDD; padding:8px;">
+                                    <span style="font-family: Arial;
+                                    font-style: normal;
+                                    font-weight: normal;
+                                    font-size: 12px;
+                                    line-height: 16px;
+                                    letter-spacing: -0.24px;
+                                    display: block;
+                                    color: #000000;">В наличии</span>
+                                 </td>
+
+                                 <td style="background: #FFFFFF; border: 1px solid #DDDDDD; padding:8px;">
+                                    <span style="font-family: Arial;
+                                    font-style: normal;
+                                    font-weight: normal;
+                                    font-size: 12px;
+                                    line-height: 16px;
+                                    letter-spacing: -0.24px;
+                                    display: block;
+                                    color: #000000;">2</span>
+                                 </td>
+
+                                 <td style="background: #FFFFFF; border: 1px solid #DDDDDD; padding:8px;">
+                                    <span style="font-family: Arial;
+                                    font-style: normal;
+                                    font-weight: normal;
+                                    font-size: 12px;
+                                    line-height: 16px;
+                                    letter-spacing: -0.24px;
+                                    display: block;
+                                    color: #000000;">1000,00</span>
+                                 </td>
+
+                                 <td style="background: #FFFFFF; border: 1px solid #DDDDDD; padding:8px;">
+                                    <span style="font-family: Arial;
+                                    font-style: normal;
+                                    font-weight: normal;
+                                    font-size: 12px;
+                                    line-height: 16px;
+                                    letter-spacing: -0.24px;
+                                    display: block;
+                                    color: #000000;">400,00</span>
+                                 </td>
+
+                                 <td style="background: #FFFFFF; border: 1px solid #DDDDDD; padding:8px;">
+                                    <span style="font-family: Arial;
+                                    font-style: normal;
+                                    font-weight: normal;
+                                    font-size: 12px;
+                                    line-height: 16px;
+                                    letter-spacing: -0.24px;
+                                    display: block;
+                                    color: #000000;">1 400,00</span>
+                                 </td>
+
+                                 <td style="background: #FFFFFF; border: 1px solid #DDDDDD; padding:8px;">
+                                    <span style="font-family: Arial;
+                                    font-style: normal;
+                                    font-weight: normal;
+                                    font-size: 12px;
+                                    line-height: 16px;
+                                    letter-spacing: -0.24px;
+                                    display: block;
+                                    color: #000000;">2 800,00</span>
+                                 </td>
+                              </tr>
+                              <tr>
+                                 <td style="background: #FFFFFF; border: 1px solid #DDDDDD; padding:8px;">
+                                    <span style="font-family: Arial;
+                                    font-style: normal;
+                                    font-weight: normal;
+                                    font-size: 12px;
+                                    line-height: 16px;
+                                    letter-spacing: -0.24px;
+                                    display: block;
+                                    color: #000000;">Шате М</span>
+                                 </td>
+
+                                 <td style="background: #FFFFFF; border: 1px solid #DDDDDD; padding:8px;">
+                                    <div><span style="font-family: Arial;
+                                       font-style: normal;
+                                       font-weight: normal;
+                                       font-size: 12px;
+                                       line-height: 16px;
+                                       letter-spacing: -0.24px;
+                                       color: #757982;">Shell</span>
+                                       <a href="#" style=" font-family: Arial; text-decoration:none;
+                                       font-style: normal;
+                                       font-weight: normal;
+                                       font-size: 12px;
+                                       line-height: 16px;
+                                       letter-spacing: -0.24px;
+                                       color: #2E90FE;"><span style="font-family: Arial; text-decoration:none;
+                                       font-style: normal;
+                                       font-weight: normal;
+                                       font-size: 12px;
+                                       line-height: 16px;
+                                       letter-spacing: -0.24px;
+                                       color: #2E90FE;">550051593</span></a></div>
+                                    <span style="font-family: Arial;
+                                    font-style: normal;
+                                    font-weight: normal;
+                                    font-size: 12px;
+                                    line-height: 16px;
+                                    letter-spacing: -0.24px;
+                                    display: block;
+                                    color: #000000;">Масло моторное Shell Helix Ultra SN+ 5W40 синтетическое 4л. 550051593</span>
+                                 </td>
+
+                                 <td style="background: #FFFFFF; border: 1px solid #DDDDDD; padding:8px;">
+                                    <span style="font-family: Arial;
+                                    font-style: normal;
+                                    font-weight: normal;
+                                    font-size: 12px;
+                                    line-height: 16px;
+                                    letter-spacing: -0.24px;
+                                    display: block;
+                                    color: #000000;">В наличии</span>
+                                 </td>
+
+                                 <td style="background: #FFFFFF; border: 1px solid #DDDDDD; padding:8px;">
+                                    <span style="font-family: Arial;
+                                    font-style: normal;
+                                    font-weight: normal;
+                                    font-size: 12px;
+                                    line-height: 16px;
+                                    letter-spacing: -0.24px;
+                                    display: block;
+                                    color: #000000;">1</span>
+                                 </td>
+
+                                 <td style="background: #FFFFFF; border: 1px solid #DDDDDD; padding:8px;">
+                                    <span style="font-family: Arial;
+                                    font-style: normal;
+                                    font-weight: normal;
+                                    font-size: 12px;
+                                    line-height: 16px;
+                                    letter-spacing: -0.24px;
+                                    display: block;
+                                    color: #000000;">500,00</span>
+                                 </td>
+
+                                 <td style="background: #FFFFFF; border: 1px solid #DDDDDD; padding:8px;">
+                                    <span style="font-family: Arial;
+                                    font-style: normal;
+                                    font-weight: normal;
+                                    font-size: 12px;
+                                    line-height: 16px;
+                                    letter-spacing: -0.24px;
+                                    display: block;
+                                    color: #000000;">0,00</span>
+                                 </td>
+
+                                 <td style="background: #FFFFFF; border: 1px solid #DDDDDD; padding:8px;">
+                                    <span style="font-family: Arial;
+                                    font-style: normal;
+                                    font-weight: normal;
+                                    font-size: 12px;
+                                    line-height: 16px;
+                                    letter-spacing: -0.24px;
+                                    display: block;
+                                    color: #000000;">500,00</span>
+                                 </td>
+
+                                 <td style="background: #FFFFFF; border: 1px solid #DDDDDD; padding:8px;">
+                                    <span style="font-family: Arial;
+                                    font-style: normal;
+                                    font-weight: normal;
+                                    font-size: 12px;
+                                    line-height: 16px;
+                                    letter-spacing: -0.24px;
+                                    display: block;
+                                    color: #000000;">500,00</span>
+                                 </td>
+                              </tr>
+
+                              <tr>
+                                 <td colspan="8" style="padding:8px;background: #F5F5F5;
+                                 border: 1px solid #DDDDDD;">
+                                    <p style="font-family: Arial;
+                                    font-style: normal;
+                                    font-weight: normal;
+                                    font-size: 14px;
+                                    line-height: 16px;
+                                    text-align: right;
+                                    letter-spacing: -0.24px;
+                                    padding-top: 6px;
+                                    padding-bottom: 6px;
+                                    margin: 0;
+                                    color: #333333;">
+                                       <span>Сумма закупки: </span>
+                                       <span> 2 500,00</span>
+                                    </p>
+
+                                    <p style="font-family: Arial;
+                                    font-style: normal;
+                                    font-weight: normal;
+                                    font-size: 14px;
+                                    line-height: 16px;
+                                    text-align: right;
+                                    letter-spacing: -0.24px;
+                                    padding-bottom: 6px;
+                                    margin: 0;
+                                    color: #333333;">
+                                       <span>Сумма продажи: </span>
+                                       <span> 3 300,00</span>
+                                    </p>
+
+                                    <p style="font-family: Arial;
+                                    font-style: normal;
+                                    font-weight: bold;
+                                    font-size: 14px;
+                                    line-height: 16px;
+                                    text-align: right;
+                                    letter-spacing: -0.24px;
+                                    padding-bottom: 6px;
+                                    margin: 0;
+                                    color: #333333;">
+                                       <span>Маржа по заказу: </span>
+                                       <span> 800,00</span>
+                                    </p>
+                                 </td>
+
+                              </tr>
+                           </table>
+                        </td>
+                     </tr>
+                  </tbody>
+               </table>
+
+               
+            </div>
+         </td>
+      </tr>
+
+
+      <tr>
+         <td class="one-column content" style="-webkit-font-smoothing:subpixel-antialiased;font-size:0;text-align:center; box-sizing: border-box; width: 100%;">
+            <div class="column" style="-webkit-font-smoothing:subpixel-antialiased;display:inline-block;font-size:14px;max-width:600px;text-align:left;box-sizing: border-box; vertical-align:top;width:100%; ">
+               
+               <table width="100%" cellpadding="10"  style="border-collapse:collapse">
+                  <tbody>
+                     <tr>
+                        <td style="-webkit-font-smoothing:subpixel-antialiased;">
+                           <div style="border-top: 1px solid #DADCE0;">
+<table width="100%" cellpadding="10"  style="border-collapse:collapse; ">
+   <tbody>
+      <tr>
+         <td class="two-columns two-columns-dMax" style="-webkit-font-smoothing:subpixel-antialiased;font-size:0;text-align:left;">
+         
+<!--[if (gte mso 9)|(IE)]>
+<table width="100%">
+<tr>
+<td width="50%" valign="top">
+<![endif]-->
+<div class="column" style="-webkit-font-smoothing:subpixel-antialiased;display:inline-block;font-size:14px;text-align:left;vertical-align:top;width:100%; max-width:280px;padding-top: 22px;">
+<table width="100%"  style="border-collapse:collapse">
+   <tbody>
+      <tr>
+         <td style="-webkit-font-smoothing:subpixel-antialiased; ">
+            <p style="font-family: Arial;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 14px;
+            line-height: 135%;
+            max-width: 114px;
+            margin: 0;
+            color: #000000;">С уважением, команда Gettzap</p>
+         </td>
+      </tr>
+   </tbody>
+</table>
+</div>
+<!--[if (gte mso 9)|(IE)]>
+<td width="50%" valign="top">
+<![endif]-->
+<div class="column" style="-webkit-font-smoothing:subpixel-antialiased;display:inline-block;font-size:14px;max-width:280px;text-align:left;vertical-align:top;width:100%;padding-top: 22px;">
+<table width="100%" cellpadding="0" style="border-collapse:collapse">
+   <tbody>
+      <tr>
+         <td style="-webkit-font-smoothing:subpixel-antialiased;">
+            <p style="font-family: Arial;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 14px;
+            line-height: 16px;
+            padding-bottom: 6px;
+            text-align: right;
+            letter-spacing: -0.24px;
+            margin: 0;
+            color: #757982;"> Техподдержка: <a href="tel:+74954454045" target="_blank" style="
+              font-family: Arial;
+font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 16px;
+letter-spacing: -0.24px;
+text-decoration: none;
+color: #757982;">
+                  <span style="
+                  font-family: Arial;
+font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 16px;
+letter-spacing: -0.24px;
+text-decoration: none;
+color: #757982;"> +7 (495) 445-40-45</span>
+               </a>
+            </p>
+            
+            <p style="font-family: Arial;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 14px;
+            line-height: 16px;
+            padding-bottom: 6px;
+            text-align: right;
+            letter-spacing: -0.24px;
+            margin: 0;
+            color: #757982;"> WhatsApp:  <a href="tel:+79267010744" target="_blank" style="
+              font-family: Arial;
+font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 16px;
+letter-spacing: -0.24px;
+text-decoration: none;
+color: #757982;">
+                  <span style="
+                  font-family: Arial;
+font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 16px;
+letter-spacing: -0.24px;
+text-decoration: none;
+color: #757982;"> +7 (926) 701-07-44</span>
+               </a>
+            </p>
+
+            <p style="font-family: Arial;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 14px;
+            line-height: 16px;
+            padding-bottom: 6px;
+            text-align: right;
+            letter-spacing: -0.24px;
+            margin: 0;
+            color: #757982;"> Email:   <a href="mailto:support@gettzap.ru" target="_blank" style="
+              font-family: Arial;
+font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 16px;
+letter-spacing: -0.24px;
+text-decoration: none;
+color: #757982;">
+                  <span style="
+                  font-family: Arial;
+font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 16px;
+letter-spacing: -0.24px;
+text-decoration: none;
+color: #757982;"> support@gettzap.ru</span>
+               </a>
+            </p>
+
+            <p style="font-family: Arial;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 14px;
+            line-height: 16px;
+            padding-bottom: 6px;
+            text-align: right;
+            letter-spacing: -0.24px;
+            margin: 0;
+            color: #757982;"> Справка:   <a href="mailto:support@gettzap.ru" target="_blank" style="
+              font-family: Arial;
+font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 16px;
+letter-spacing: -0.24px;
+text-decoration: underline;
+color: #757982;">
+                  <span style="
+                  font-family: Arial;
+font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 16px;
+letter-spacing: -0.24px;
+text-decoration: underline;
+color: #757982;">  help.gettzap.ru</span>
+               </a>
+            </p>
+         </td>
+      </tr>
+   </tbody>
+</table>
+</div>
+<!--[if (gte mso 9)|(IE)]><![endif]-->
+</td>
+      </tr>
+   </tbody>
+</table>
+                           </div>
+                           
+                        </td>
+                     </tr>
+                  </tbody>
+               </table>
+               
+               
+            </div>
+         </td>
+      </tr>
                </tbody>
             </table>
             <!--[if (gte mso 9)|(IE)]><![endif]-->
 </div>
-<div class="footer" style="-ms-text-size-adjust:100%;-webkit-font-smoothing:subpixel-antialiased;-webkit-text-size-adjust:100%;background-color:#f4f4f4;margin:0 10px;table-layout:fixed;text-align:center">
+<div class="footer" style="-ms-text-size-adjust:100%;-webkit-font-smoothing:subpixel-antialiased;-webkit-text-size-adjust:100%;background: #F5F6F9;margin:0 5px;table-layout:fixed;text-align:center;padding-bottom: 30px;">
    <!--[if (gte mso 9)|(IE)]>
    <table width="600" align="center">
    <tr>
@@ -552,37 +1121,45 @@ p {
                            <tbody>
                               <tr>
                                  <td style="-webkit-font-smoothing:subpixel-antialiased">
-                                    <div class="h1" style="-webkit-font-smoothing:subpixel-antialiased;color:#333;font-family:helvetica,arial;font-size:24px;line-height:30px;text-align:center">Contact Me<br><span style="color:#bababa">–</span></div>
-                                    <div class="paragraph" style="-webkit-font-smoothing:subpixel-antialiased;color:#333;font-family:helvetica,arial;font-size:14px;line-height:20px;text-align:center"><a href="mailto:dudeonthehorse@gmail.com" style="color:#07c!important;text-decoration:underline"><span style="color:#07c">dudeonthehorse@gmail.com</span></a></div>
-                                    <br>
-                                    <div align="center" style="-webkit-font-smoothing:subpixel-antialiased">
-                                       <table align="center" cellpadding="10" style="border-collapse:collapse;margin:auto">
-                                          <tbody>
-                                             <tr>
-                                                <td style="-webkit-font-smoothing:subpixel-antialiased"><a href="https://plus.google.com/u/0/114643441727114040398" target="_blank" style="color:#07c!important;text-decoration:underline"><img width="24" height="24" src="./index_files/google.png" style="border:0"></a></td>
-                                                <td style="-webkit-font-smoothing:subpixel-antialiased"><a href="https://vk.com/dudeonthehorse" target="_blank" style="color:#07c!important;text-decoration:underline"><img width="24" height="24" src="./index_files/vkontakte.png" style="border:0"></a></td>
-                                                <td style="-webkit-font-smoothing:subpixel-antialiased"><a href="https://www.facebook.com/dudeonthehorse" target="_blank" style="color:#07c!important;text-decoration:underline"><img width="24" height="24" src="./index_files/facebook.png" style="border:0"></a></td>
-                                                <td style="-webkit-font-smoothing:subpixel-antialiased"><a href="https://twitter.com/dudeonthehorse" target="_blank" style="color:#07c!important;text-decoration:underline"><img width="24" height="24" src="./index_files/twitter.png" style="border:0"></a></td>
-                                                <td style="-webkit-font-smoothing:subpixel-antialiased"><a href="https://github.com/dudeonthehorse" target="_blank" style="color:#07c!important;text-decoration:underline"><img width="24" height="24" src="./index_files/github.png" style="border:0"></a></td>
-                                             </tr>
-                                          </tbody>
-                                       </table>
+                                    <div class="h1" style="-webkit-font-smoothing:subpixel-antialiased;font-style: normal;
+                                    font-weight: normal;
+                                    font-size: 12px;
+                                    line-height: 150%;
+                                    text-align: center;
+                                    padding-bottom: 8px;
+                                    color: #757982;font-family:arial;text-align:center">Настроить уведомления о новых заказах вы можете в личном кабинете</div>
+
+                                    <div class="h1" style="-webkit-font-smoothing:subpixel-antialiased;font-style: normal;
+                                    font-weight: normal;
+                                    font-size: 12px;
+                                    line-height: 150%;
+                                    text-align: center;
+                                    padding-bottom: 14px;
+                                    color: #757982;font-family:arial;text-align:center">© 2020 Gettzap  |    Все права защищены</div>
+
+                                    <div class="h1" style="-webkit-font-smoothing:subpixel-antialiased;font-style: normal;
+                                    font-weight: normal;
+                                    font-size: 12px;
+                                    line-height: 150%;
+                                    text-align: center;
+                                    padding-bottom: 8px;
+                                    color: #757982;font-family:arial;text-align:center">
+
+                                    <a href="#" style="color: #757982!important;text-decoration:underline"><span style="color: #757982!important">Политика обработки персональных данных</span></a>
                                     </div>
-                                 </td>
-                              </tr>
-                           </tbody>
-                        </table>
-                     </div>
-                  </td>
-               </tr>
-               <tr>
-                  <td class="one-column credits" style="-webkit-font-smoothing:subpixel-antialiased;font-size:0;text-align:center">
-                     <div class="column" style="-webkit-font-smoothing:subpixel-antialiased;display:inline-block;font-size:14px;max-width:600px;text-align:left;vertical-align:top;width:100%">
-                        <table width="100%" cellpadding="20" style="border-collapse:collapse">
-                           <tbody>
-                              <tr>
-                                 <td style="-webkit-font-smoothing:subpixel-antialiased">
-                                    <div class="paragraph" style="-webkit-font-smoothing:subpixel-antialiased;color:#999;font-family:helvetica,arial;font-size:12px;line-height:20px;text-align:center">Social icons by <a href="http://www.socicon.com/" target="_blank" style="color:#07c!important;text-decoration:underline"><span style="color:#07c">Socicon</span></a><br><br>You are received this message because I want. Ha-ha-ha-ha!<br><a href="https://github.com/dudeonthehorse/kilogram" target="_blank" style="color:#07c!important;text-decoration:underline"><span style="color:#07c">Unsubscribe</span></a></div>
+
+                                    <div class="h1" style="-webkit-font-smoothing:subpixel-antialiased;font-style: normal;
+                                    font-weight: normal;
+                                    font-size: 12px;
+                                    line-height: 150%;
+                                    text-align: center;
+                                    padding-bottom: 0px;
+                                    color: #757982;font-family:arial;text-align:center">
+
+                                    <a href="#" style="color: #757982!important;text-decoration:underline"><span style="color: #757982!important">Политика конфиденциальности</span></a>
+                                    </div>
+                                    
+                                   
                                  </td>
                               </tr>
                            </tbody>
