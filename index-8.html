@@ -12,7 +12,7 @@
 
 .outer {
     margin: 0 auto;
-    max-width: 600px;
+    max-width:704px;
     width: 100%
 }
 
@@ -96,7 +96,7 @@ p {
 .cover img {
     width: 100%;
     height: auto;
-    max-width: 600px;
+    max-width:704px;
     display: block;
     border-radius: 4px 4px 0 0
 }
@@ -214,8 +214,18 @@ p {
     .four-columns .column {
         max-width: 100%!important
     }
-    .lvl-table td{vertical-align: top;}
-    .lvl-table td img{width: 10px;}
+    .lvl-table > tbody > tr > td{display: block!important;}
+    .lvl-table {
+       display: block!important;
+    }
+
+    .lvl-table tr {
+       display: block!important;
+    }
+
+    .lvl-table div {
+       margin-left: 0!important;
+    }
 
     .sub-footer-block p{
        margin-left: 0!important;
@@ -227,6 +237,11 @@ p {
 
     .yellow-link{
        max-width: none!important;
+    }
+
+    .container{
+       padding-left: 12px!important;
+       padding-right: 12px!important;
     }
 }
 
@@ -270,14 +285,14 @@ p {
    <tr>
       <td>
          <![endif]-->
-         <table class="outer" cellpadding="0" align="center" style="border-collapse:collapse;background: #FFFFFF;border-radius: 10px;margin:0 auto;max-width:600px;width:100%">
+         <table class="outer" cellpadding="0" align="center" style="border-collapse:collapse;background: #FFFFFF;border-radius: 10px;margin:0 auto;max-width:704px;width:100%">
    <tbody>
       <tr>
          <td class="one-column content"   style="-webkit-font-smoothing:subpixel-antialiased;padding-top:40px;box-sizing: border-box; width: 100%;">
-            <table width="100%" cellpadding="10" style="border-collapse:collapse">
+            <table width="100%" cellpadding="40" style="border-collapse:collapse">
                <tbody>
                   <tr>
-                     <td style="-webkit-font-smoothing:subpixel-antialiased;padding-top: 0; padding-bottom: 0;">
+                     <td class="container" style="-webkit-font-smoothing:subpixel-antialiased;padding-top: 0; padding-bottom: 0;">
                        
                         <div style="-webkit-font-smoothing:subpixel-antialiased;padding-bottom:35px;border-bottom: 1px solid #E4E4E4;">
                            <a href="#" target="_blank" style="font-family: Arial;
@@ -314,12 +329,22 @@ p {
       </tr>
       <tr>
          <td class="one-column content" style="-webkit-font-smoothing:subpixel-antialiased;font-size:0;padding:0;text-align:center;box-sizing:border-box; width: 100%;">
-            <div class="column" style="-webkit-font-smoothing:subpixel-antialiased;display:inline-block;font-size:14px;max-width:600px;text-align:left;vertical-align:top;width:100%">
-               <table width="100%" cellpadding="10" style="border-collapse:collapse">
+            <div class="column" style="-webkit-font-smoothing:subpixel-antialiased;display:inline-block;font-size:14px;max-width:704px;text-align:left;vertical-align:top;width:100%">
+               <table width="100%" cellpadding="40" style="border-collapse:collapse">
                   <tbody>
                      <tr>
-                        <td style="-webkit-font-smoothing:subpixel-antialiased; padding-bottom:22px; padding-top:24px;">
-                             
+                        <td class="container" style="-webkit-font-smoothing:subpixel-antialiased; padding-bottom:34px; padding-top:9px;">
+                           <p style="
+                           font-family: Arial;
+                           font-style: normal;
+                           font-weight: normal;
+                           font-size: 18px;
+                           line-height: 135%;
+                           color: #000000;
+                           margin: 0;
+                           padding: 14px 0 30px;">
+                              Здравствуйте, Сергей!
+                           </p>
                               
                            <div class="h1" 
                         style="-webkit-font-smoothing:subpixel-antialiased;
@@ -342,22 +367,22 @@ p {
       </tr>
       <tr>
          <td class="one-column content" style="-webkit-font-smoothing:subpixel-antialiased;font-size:0;text-align:center; box-sizing: border-box; width: 100%;">
-            <div class="column" style="-webkit-font-smoothing:subpixel-antialiased;display:inline-block;font-size:14px;max-width:600px;text-align:left;box-sizing: border-box; vertical-align:top;width:100%; ">
+            <div class="column" style="-webkit-font-smoothing:subpixel-antialiased;display:inline-block;font-size:14px;max-width:704px;text-align:left;box-sizing: border-box; vertical-align:top;width:100%; ">
                
-               <table width="100%" cellpadding="10"  style="border-collapse:collapse">
+               <table width="100%" cellpadding="0"  style="border-collapse:collapse">
                   <tbody>
                      <tr>
                         <td style="-webkit-font-smoothing:subpixel-antialiased;">
                           
-                        <table width="100%" cellpadding="10"  style="border-collapse:collapse; ">
+                        <table width="100%" cellpadding="40"  style="border-collapse:collapse; ">
                            <tbody>
                               <tr>
-                                 <td class="one-column content" style="-webkit-font-smoothing:subpixel-antialiased;font-size:0;text-align:center; box-sizing: border-box; width: 100%;">
-
+                                 <td class="one-column content container" style="-webkit-font-smoothing:subpixel-antialiased;font-size:0;text-align:center; box-sizing: border-box; width: 100%;padding-left: 40px; padding-right: 40px;">
+                                    
                                     <div style="background: #F5F6F9;
                                     border-radius: 10px;">
 
-                                    <table width="100%" cellpadding="10"  style="border-collapse:collapse">
+                                    <table width="100%" cellpadding="14"  style="border-collapse:collapse">
                                        <tbody>
                                           <tr>
                                              <td style="-webkit-font-smoothing:subpixel-antialiased;">
@@ -367,33 +392,49 @@ p {
                                                    </div>
                                                    <table class="lvl-table" width="100%" style="border-collapse:collapse">
                                                       <tr>
-                                                         <td style="width:100%;">
-                                                            <div class="h2" style="-webkit-font-smoothing:subpixel-antialiased;
-                                                            font-family: Arial;
-                                                            font-style: normal;
-                                                            font-weight: bold;
-                                                            font-size: 17px;
-                                                            line-height: 20px;
-                                                            letter-spacing: -0.24px;
-                                                            color: #000000;">
-                                                               Сергей Иванов
+                                                         <td style=" vertical-align: top;">
+                                                            <div >
+                                                               <table style="width: 100%;">
+                                                                  <tr>
+                                                                     <td>
+                                                                        <div class="h2" style="-webkit-font-smoothing:subpixel-antialiased;
+                                                                           font-family: Arial;
+                                                                           font-style: normal;
+                                                                           font-weight: bold;
+                                                                           font-size: 17px;
+                                                                           line-height: 20px;
+                                                                           letter-spacing: -0.24px;
+                                                                           color: #000000;">
+                                                                              Сергей Иванов
+                                                                        </div>
+                                                                     </td>
+                                                                  </tr>
+                                                               </table>
                                                             </div>
                                                          </td>
 
-                                                         <td>
-                                                            <img style="display: block;" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAATCAYAAACQjC21AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAFHSURBVHgBrVNBTsMwEBwXjhzSH6QSIHFLX1DxAvoEfoB4AeUl8IM8oeIF5BZBkcIPmgMnCFrGVqBx4uJt1ZFWtuz1eOydBRSQCqk8I9HkjjRJaHCNE9zgUJA3VLLCWqMyqlBeqU6QcppoVJooIdW1hDb73Zxign0VdtS1CyzOClf/nTn2CCr3Rwk+kVFNwuvuSNK7BQteNLZqOa/NOYrutrGWwBdyR2Q6anaBQU3ygnHr/pD/NOfwwAWV1wKoGXNzhqe/olBp5pTurtKqu/x9uldlKUl2hKWaVPiP3yS74NhiYBs1aYDMYmAblzDyKxeEQdEnCxK2yBCDhHOGT7ZebLCGBh8Ym6mrMLYrbAY32wMLF8Y/zN6e9Y+HnrxJEjxSxYT+urdBW03d2mY/RQw0ec5+XTJmW3NK19M2L48Tlnpjy4vrMA8/6gJ1nlQOon8AAAAASUVORK5CYII=" alt="">
-                                                         </td>
-                                                         <td>
-                                                            <img style="display: block;" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAATCAYAAACQjC21AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAFHSURBVHgBrVNBTsMwEBwXjhzSH6QSIHFLX1DxAvoEfoB4AeUl8IM8oeIF5BZBkcIPmgMnCFrGVqBx4uJt1ZFWtuz1eOydBRSQCqk8I9HkjjRJaHCNE9zgUJA3VLLCWqMyqlBeqU6QcppoVJooIdW1hDb73Zxign0VdtS1CyzOClf/nTn2CCr3Rwk+kVFNwuvuSNK7BQteNLZqOa/NOYrutrGWwBdyR2Q6anaBQU3ygnHr/pD/NOfwwAWV1wKoGXNzhqe/olBp5pTurtKqu/x9uldlKUl2hKWaVPiP3yS74NhiYBs1aYDMYmAblzDyKxeEQdEnCxK2yBCDhHOGT7ZebLCGBh8Ym6mrMLYrbAY32wMLF8Y/zN6e9Y+HnrxJEjxSxYT+urdBW03d2mY/RQw0ec5+XTJmW3NK19M2L48Tlnpjy4vrMA8/6gJ1nlQOon8AAAAASUVORK5CYII=" alt="">
-                                                         </td>
-                                                         <td>
-                                                            <img style="display: block;" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAATCAYAAACQjC21AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAFHSURBVHgBrVNBTsMwEBwXjhzSH6QSIHFLX1DxAvoEfoB4AeUl8IM8oeIF5BZBkcIPmgMnCFrGVqBx4uJt1ZFWtuz1eOydBRSQCqk8I9HkjjRJaHCNE9zgUJA3VLLCWqMyqlBeqU6QcppoVJooIdW1hDb73Zxign0VdtS1CyzOClf/nTn2CCr3Rwk+kVFNwuvuSNK7BQteNLZqOa/NOYrutrGWwBdyR2Q6anaBQU3ygnHr/pD/NOfwwAWV1wKoGXNzhqe/olBp5pTurtKqu/x9uldlKUl2hKWaVPiP3yS74NhiYBs1aYDMYmAblzDyKxeEQdEnCxK2yBCDhHOGT7ZebLCGBh8Ym6mrMLYrbAY32wMLF8Y/zN6e9Y+HnrxJEjxSxYT+urdBW03d2mY/RQw0ec5+XTJmW3NK19M2L48Tlnpjy4vrMA8/6gJ1nlQOon8AAAAASUVORK5CYII=" alt="">
-                                                         </td>
-                                                         <td>
-                                                            <img style="display: block;" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAATCAYAAACQjC21AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAFHSURBVHgBrVNBTsMwEBwXjhzSH6QSIHFLX1DxAvoEfoB4AeUl8IM8oeIF5BZBkcIPmgMnCFrGVqBx4uJt1ZFWtuz1eOydBRSQCqk8I9HkjjRJaHCNE9zgUJA3VLLCWqMyqlBeqU6QcppoVJooIdW1hDb73Zxign0VdtS1CyzOClf/nTn2CCr3Rwk+kVFNwuvuSNK7BQteNLZqOa/NOYrutrGWwBdyR2Q6anaBQU3ygnHr/pD/NOfwwAWV1wKoGXNzhqe/olBp5pTurtKqu/x9uldlKUl2hKWaVPiP3yS74NhiYBs1aYDMYmAblzDyKxeEQdEnCxK2yBCDhHOGT7ZebLCGBh8Ym6mrMLYrbAY32wMLF8Y/zN6e9Y+HnrxJEjxSxYT+urdBW03d2mY/RQw0ec5+XTJmW3NK19M2L48Tlnpjy4vrMA8/6gJ1nlQOon8AAAAASUVORK5CYII=" alt="">
-                                                         </td>
-                                                         <td>
-                                                            <img style="display: block;" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAATCAYAAACQjC21AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAFHSURBVHgBrVNBTsMwEBwXjhzSH6QSIHFLX1DxAvoEfoB4AeUl8IM8oeIF5BZBkcIPmgMnCFrGVqBx4uJt1ZFWtuz1eOydBRSQCqk8I9HkjjRJaHCNE9zgUJA3VLLCWqMyqlBeqU6QcppoVJooIdW1hDb73Zxign0VdtS1CyzOClf/nTn2CCr3Rwk+kVFNwuvuSNK7BQteNLZqOa/NOYrutrGWwBdyR2Q6anaBQU3ygnHr/pD/NOfwwAWV1wKoGXNzhqe/olBp5pTurtKqu/x9uldlKUl2hKWaVPiP3yS74NhiYBs1aYDMYmAblzDyKxeEQdEnCxK2yBCDhHOGT7ZebLCGBh8Ym6mrMLYrbAY32wMLF8Y/zN6e9Y+HnrxJEjxSxYT+urdBW03d2mY/RQw0ec5+XTJmW3NK19M2L48Tlnpjy4vrMA8/6gJ1nlQOon8AAAAASUVORK5CYII=" alt="">
+                                                         <td style="vertical-align: top;">
+                                                            <div style="width: 100%; max-width: 124px;margin-left: auto;">
+                                                               <table style="width: 100%;">
+                                                                  <tr>
+                                                                     <td style="vertical-align: top; padding-right: 6px;">
+                                                                        <img style="display: block;" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAATCAYAAACQjC21AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAFHSURBVHgBrVNBTsMwEBwXjhzSH6QSIHFLX1DxAvoEfoB4AeUl8IM8oeIF5BZBkcIPmgMnCFrGVqBx4uJt1ZFWtuz1eOydBRSQCqk8I9HkjjRJaHCNE9zgUJA3VLLCWqMyqlBeqU6QcppoVJooIdW1hDb73Zxign0VdtS1CyzOClf/nTn2CCr3Rwk+kVFNwuvuSNK7BQteNLZqOa/NOYrutrGWwBdyR2Q6anaBQU3ygnHr/pD/NOfwwAWV1wKoGXNzhqe/olBp5pTurtKqu/x9uldlKUl2hKWaVPiP3yS74NhiYBs1aYDMYmAblzDyKxeEQdEnCxK2yBCDhHOGT7ZebLCGBh8Ym6mrMLYrbAY32wMLF8Y/zN6e9Y+HnrxJEjxSxYT+urdBW03d2mY/RQw0ec5+XTJmW3NK19M2L48Tlnpjy4vrMA8/6gJ1nlQOon8AAAAASUVORK5CYII=" alt="">
+                                                                     </td>
+                                                                     <td style="vertical-align: top; padding-right: 6px;">
+                                                                        <img style="display: block;" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAATCAYAAACQjC21AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAFHSURBVHgBrVNBTsMwEBwXjhzSH6QSIHFLX1DxAvoEfoB4AeUl8IM8oeIF5BZBkcIPmgMnCFrGVqBx4uJt1ZFWtuz1eOydBRSQCqk8I9HkjjRJaHCNE9zgUJA3VLLCWqMyqlBeqU6QcppoVJooIdW1hDb73Zxign0VdtS1CyzOClf/nTn2CCr3Rwk+kVFNwuvuSNK7BQteNLZqOa/NOYrutrGWwBdyR2Q6anaBQU3ygnHr/pD/NOfwwAWV1wKoGXNzhqe/olBp5pTurtKqu/x9uldlKUl2hKWaVPiP3yS74NhiYBs1aYDMYmAblzDyKxeEQdEnCxK2yBCDhHOGT7ZebLCGBh8Ym6mrMLYrbAY32wMLF8Y/zN6e9Y+HnrxJEjxSxYT+urdBW03d2mY/RQw0ec5+XTJmW3NK19M2L48Tlnpjy4vrMA8/6gJ1nlQOon8AAAAASUVORK5CYII=" alt="">
+                                                                     </td>
+                                                                     <td style="vertical-align: top; padding-right: 6px;"> 
+                                                                        <img style="display: block;" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAATCAYAAACQjC21AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAFHSURBVHgBrVNBTsMwEBwXjhzSH6QSIHFLX1DxAvoEfoB4AeUl8IM8oeIF5BZBkcIPmgMnCFrGVqBx4uJt1ZFWtuz1eOydBRSQCqk8I9HkjjRJaHCNE9zgUJA3VLLCWqMyqlBeqU6QcppoVJooIdW1hDb73Zxign0VdtS1CyzOClf/nTn2CCr3Rwk+kVFNwuvuSNK7BQteNLZqOa/NOYrutrGWwBdyR2Q6anaBQU3ygnHr/pD/NOfwwAWV1wKoGXNzhqe/olBp5pTurtKqu/x9uldlKUl2hKWaVPiP3yS74NhiYBs1aYDMYmAblzDyKxeEQdEnCxK2yBCDhHOGT7ZebLCGBh8Ym6mrMLYrbAY32wMLF8Y/zN6e9Y+HnrxJEjxSxYT+urdBW03d2mY/RQw0ec5+XTJmW3NK19M2L48Tlnpjy4vrMA8/6gJ1nlQOon8AAAAASUVORK5CYII=" alt="">
+                                                                     </td>
+                                                                     <td style="vertical-align: top; padding-right: 6px;">
+                                                                        <img style="display: block;" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAATCAYAAACQjC21AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAFHSURBVHgBrVNBTsMwEBwXjhzSH6QSIHFLX1DxAvoEfoB4AeUl8IM8oeIF5BZBkcIPmgMnCFrGVqBx4uJt1ZFWtuz1eOydBRSQCqk8I9HkjjRJaHCNE9zgUJA3VLLCWqMyqlBeqU6QcppoVJooIdW1hDb73Zxign0VdtS1CyzOClf/nTn2CCr3Rwk+kVFNwuvuSNK7BQteNLZqOa/NOYrutrGWwBdyR2Q6anaBQU3ygnHr/pD/NOfwwAWV1wKoGXNzhqe/olBp5pTurtKqu/x9uldlKUl2hKWaVPiP3yS74NhiYBs1aYDMYmAblzDyKxeEQdEnCxK2yBCDhHOGT7ZebLCGBh8Ym6mrMLYrbAY32wMLF8Y/zN6e9Y+HnrxJEjxSxYT+urdBW03d2mY/RQw0ec5+XTJmW3NK19M2L48Tlnpjy4vrMA8/6gJ1nlQOon8AAAAASUVORK5CYII=" alt="">
+                                                                     </td>
+                                                                     <td>
+                                                                        <img style="display: block;" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAATCAYAAACQjC21AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAFHSURBVHgBrVNBTsMwEBwXjhzSH6QSIHFLX1DxAvoEfoB4AeUl8IM8oeIF5BZBkcIPmgMnCFrGVqBx4uJt1ZFWtuz1eOydBRSQCqk8I9HkjjRJaHCNE9zgUJA3VLLCWqMyqlBeqU6QcppoVJooIdW1hDb73Zxign0VdtS1CyzOClf/nTn2CCr3Rwk+kVFNwuvuSNK7BQteNLZqOa/NOYrutrGWwBdyR2Q6anaBQU3ygnHr/pD/NOfwwAWV1wKoGXNzhqe/olBp5pTurtKqu/x9uldlKUl2hKWaVPiP3yS74NhiYBs1aYDMYmAblzDyKxeEQdEnCxK2yBCDhHOGT7ZebLCGBh8Ym6mrMLYrbAY32wMLF8Y/zN6e9Y+HnrxJEjxSxYT+urdBW03d2mY/RQw0ec5+XTJmW3NK19M2L48Tlnpjy4vrMA8/6gJ1nlQOon8AAAAASUVORK5CYII=" alt="">
+                                                                     </td>
+                                                                  </tr>
+                                                               </table>
+                                                            </div>
                                                          </td>
                                                       </tr>
 
@@ -403,7 +444,7 @@ p {
                                                             font-family: Arial;
                                                             font-style: normal;
                                                             padding-top: 8px;
-                                                            padding-bottom: 30px;
+                                                            padding-bottom: 0;
                                                             font-weight: normal;
                                                             font-size: 17px;
                                                             line-height: 20px;
@@ -437,19 +478,20 @@ p {
       </tr>
       <tr>
          <td class="one-column content" style="-webkit-font-smoothing:subpixel-antialiased;font-size:0;padding:0;text-align:center;box-sizing:border-box; width: 100%;">
-            <div class="column" style="-webkit-font-smoothing:subpixel-antialiased;display:inline-block;font-size:14px;max-width:600px;text-align:left;vertical-align:top;width:100%">
-               <table width="100%" cellpadding="10" style="border-collapse:collapse">
+            <div class="column" style="-webkit-font-smoothing:subpixel-antialiased;display:inline-block;font-size:14px;max-width:704px;text-align:left;vertical-align:top;width:100%">
+               <table width="100%" cellpadding="40" style="border-collapse:collapse">
                   <tbody>
                      <tr>
-                        <td style="-webkit-font-smoothing:subpixel-antialiased;">
+                        <td class="container" style="-webkit-font-smoothing:subpixel-antialiased;padding-top: 8px;padding-bottom: 0;">
                            <p style="text-align: center;font-weight: normal;
                            font-size: 12px;
                            line-height: 150%;
                            font-family: Arial;
+                           
                            text-align: left;
                            max-width: 360px;
                            color: #757982;">
-                              Спасибо, что делитесь своим мнением, это помогает сделать наш сервис лучше.
+                             Спасибо, что делитесь своим мнением, это помогает сделать наш сервис лучше.
                            </p>
                         </td>
                      </tr>
@@ -464,17 +506,17 @@ p {
 
       <tr>
          <td class="one-column content" style="-webkit-font-smoothing:subpixel-antialiased;font-size:0;text-align:center; box-sizing: border-box; width: 100%;">
-            <div class="column" style="-webkit-font-smoothing:subpixel-antialiased;display:inline-block;font-size:14px;max-width:600px;text-align:left;box-sizing: border-box; vertical-align:top;width:100%; ">
+            <div class="column" style="-webkit-font-smoothing:subpixel-antialiased;display:inline-block;font-size:14px;max-width:704px;text-align:left;box-sizing: border-box; vertical-align:top;width:100%; ">
                
-               <table width="100%" cellpadding="10"  style="border-collapse:collapse">
+               <table width="100%" cellpadding="40"  style="border-collapse:collapse">
                   <tbody>
                      <tr>
-                        <td style="-webkit-font-smoothing:subpixel-antialiased;">
+                        <td class="container" style="-webkit-font-smoothing:subpixel-antialiased;padding-top: 19px;padding-bottom: 22px;">
                            <div style="border-top: 1px solid #DADCE0;">
-<table width="100%" cellpadding="10"  style="border-collapse:collapse; ">
+<table width="100%" cellpadding="0"  style="border-collapse:collapse; ">
    <tbody>
       <tr>
-         <td class="two-columns two-columns-dMax sub-footer-block" style="-webkit-font-smoothing:subpixel-antialiased;font-size:0;text-align:left;">
+         <td class="two-columns two-columns-dMax sub-footer-block" style="-webkit-font-smoothing:subpixel-antialiased;font-size:0;text-align:left;padding-left: 0;padding-right: 0;">
          
             <!--[if (gte mso 9)|(IE)]>
             <table width="100%">
@@ -491,6 +533,7 @@ p {
                         font-weight: bold;
                         font-size: 14px;
                         line-height: 135%;
+                        padding-top: 9px;
                         padding-bottom: 20px;
                         max-width: 114px;
                         margin: 0;
@@ -529,11 +572,11 @@ p {
    <tr>
       <td>
          <![endif]-->
-         <table class="outer" cellpadding="0" align="center" style="border-collapse:collapse;margin:0 auto;max-width:600px;width:100%">
+         <table class="outer" cellpadding="0" align="center" style="border-collapse:collapse;margin:0 auto;max-width:704px;width:100%">
             <tbody>
                <tr>
                   <td class="one-column contacts" style="-webkit-font-smoothing:subpixel-antialiased;font-size:0;text-align:center">
-                     <div class="column" style="-webkit-font-smoothing:subpixel-antialiased;display:inline-block;font-size:14px;max-width:600px;text-align:left;vertical-align:top;width:100%">
+                     <div class="column" style="-webkit-font-smoothing:subpixel-antialiased;display:inline-block;font-size:14px;max-width:704px;text-align:left;vertical-align:top;width:100%">
                         <table width="100%" cellpadding="20" style="border-collapse:collapse">
                            <tbody>
                               <tr>
@@ -544,7 +587,7 @@ p {
                                     line-height: 150%;
                                     text-align: center;
                                     padding-bottom: 8px;
-                                    color: #757982;font-family:arial;text-align:center">Настроить уведомления о новых заказах вы можете в личном кабинете</div>
+                                    color: #757982;font-family:arial;text-align:center">Вы получили это письмо, потому что зарегистрировались в сервисе Gettzap</div>
 
                                     <div class="h1" style="-webkit-font-smoothing:subpixel-antialiased;font-style: normal;
                                     font-weight: normal;
